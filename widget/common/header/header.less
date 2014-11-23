@@ -1,0 +1,55 @@
+@import '/static/common/less-config-1118.less';
+// module path defined
+@module: '@{widget}/header';
+
+.header {
+    height: 72px;
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+
+    .header-con {
+        width: @content-width;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        .float(left);
+        width: 180px;
+        height: 40px;
+        margin-top: 15px;
+    }
+
+    .nav {
+        margin-left: 350px;
+        padding-top: 19px;
+
+        li {
+            position: relative;
+            .float(left);
+            width: 90px;
+            height: 32px;
+            margin-left: 20px;
+            z-index: 99;
+        }
+        
+        a {
+            .border-radius();
+            display: block;
+            text-align: center;
+            font:500 16px/32px Microsoft YaHei;
+            text-decoration: none;
+            color: #333;
+
+            &:hover {
+                background-color: @blue;
+                color: #fff;
+            }
+        }
+
+        .active {
+            background-color: @blue;
+            color: #fff;
+        }
+    }
+}

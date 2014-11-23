@@ -1,0 +1,17 @@
+<div class="modal-mask"></div>
+<div class="modal round">
+    <div class="modal-title">
+        <i class="icon icon-close modal-close"></i>
+        ${title}
+    </div>
+    <div class="modal-body">${content | raw}</div>
+    <!-- if: ${btns.length} -->
+    <div class="modal-btns">
+        <!-- for: ${btns} as ${btn} -->
+        ${btn | raw}
+        <!-- /for -->
+    </div>
+    <!-- /if -->
+</div>
+
+

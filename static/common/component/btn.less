@@ -1,0 +1,95 @@
+@import '../less-config.less';
+
+.btn {
+    .box-sizing(content-box);
+    .border-radius();
+    display: inline-block;
+    width: 158px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ececec;
+    cursor: pointer;
+    outline: none;
+    font: 500 16px/30px Microsoft YaHei;
+    *line-height: 20px;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+/*白底蓝边*/
+.btn-white {
+    background-color: #fff;
+    border-color: @blue;
+
+    &:hover {
+        color: #fff;
+        background-color: @blue-hover;
+        border-color: @blue-hover;
+    }
+
+    &:active {
+        color: #fff;
+        background-color: @blue-active;
+        border-color: @blue-active;
+    }
+}
+
+/*红色*/
+.btn-primary {
+    background-color: @red;
+    border-color: @red;
+    color: #fff;
+
+    &:hover {
+        background-color: @red-hover;
+        border-color: @red-hover;
+    }
+
+    &:active {
+        background-color: @red-active;
+        border-color: @red-active;
+    }
+}
+
+.btn-info {
+    background-color: @blue;
+    border-color: @blue;
+    color: #fff;
+
+    &:hover {
+        background-color: @blue-hover;
+        border-color: @blue-hover;
+    }
+
+    &:active {
+        background-color: @blue-active;
+        border-color: @blue-active;
+    }
+}
+
+.btn-submit {
+    *border: none;
+    *height: 32px;
+}
+
+/*灰色*/
+.btn-default {
+    background-color: @gray;
+    border-color: @gray;
+    color: #aaa;
+
+    &:hover {
+        background-color: @gray-hover;
+        border-color: @gray-hover;
+    }
+
+    &:active {
+        background-color: @gray-active;
+        border-color: @gray-active;
+    }
+}

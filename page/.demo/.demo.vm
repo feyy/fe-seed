@@ -1,0 +1,8 @@
+#set($pageName = 'demo')
+#set($pageTitle="demo")
+
+#parse('widget/common/header/header.vm')
+
+<h1>felix test</h1>
+
+#parse('widget/common/footer/footer.vm')

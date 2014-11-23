@@ -1,0 +1,25 @@
+@import '../less-config.less';
+
+html,
+body {
+    min-width: @content-width;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    color: #333; 
+    line-height: 1.2;
+}
+
+input::-ms-clear{display:none;}
+
+.content {
+    .clearfix();
+    width: @content-width;
+    min-height: 80%;
+    _height: 80%;
+    margin: 20px auto;
+}

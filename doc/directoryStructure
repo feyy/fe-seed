@@ -1,0 +1,63 @@
+项目开发目录结构
+${root}/
+    page/                                        #页面入口文件，vm模板(可建立业务逻辑文件夹)       【需发布】
+        page1/
+            page1.vm
+            page1.js
+            page1.less
+            [img/ ...]
+        page2/
+            .
+    widget/                                      #页面组件,组件能独立运行                          【需发布】
+        widegt1/
+            img/
+            widget1.vm
+            widget1.less
+            widget1.js
+            [swf/, font/ ...]
+        widget2/
+            .
+    static/                                     #公共的静态资源                                    【需发布】
+        common/
+            img/
+            component/                          #css公用组件样式
+                [btn.less, table.less ...]       
+            tools/                              #js公用工具模块                          
+    dep/                                        #第三方包                                          【需发布】
+    test/                                       #测试用例和开发阶段模拟数据
+    doc/                                        #项目文档
+    fis-conf.js                                 #fis配置文件
+    [tool/]                                     #开发或构建阶段使用的工具
+    [build.sh, build.xml, Gruntfile]            #开发或构件阶段使用的配置文件
+
+------------------------------------------------------------------------------------------------------------
+
+项目发布目录结构
+${root}/
+    WEB-INF/views/                              #vm模板跟目录
+        page/                                   #页面入口模板目录
+            page1.vm
+                .
+        widget/                                 #页面组件模板目录
+            widget1/
+                widget1.vm
+            widget2/
+                .       
+    static/
+        dep/                                    #第三方依赖
+        common/
+            common.css
+            tool.js
+            [...]
+        widget/
+            widget1/
+                widget1.js
+                [img/ ...] 
+            widget2/
+                .
+        page1/
+            page1.js
+            page1.css
+            [img/ ...]
+        page2/
+            .

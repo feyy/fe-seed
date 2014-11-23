@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>$!{pageTitle}</title>
+    <meta name="keywords" content="#if(${keywords})${keywords}#else金融服务平台|贷款平台|贷款搜索平台#end" />
+    <meta name="description" content="#if(${description})${description}#else 58同城金融服务平台，提供个人消费贷款、购房按揭贷款、二手房贷款、购车贷款、二手车贷款、小微企业贷款、银行贷款、无抵押贷款等贷款信息，简单可信#end" />
+    <link rel="shortcut icon" href="http://static.58.com/back/favicon.ico" />
+    <link rel="stylesheet" href="/static/common/common.css?${__version__}" />
+    <link rel="stylesheet" href="/static/${pageName}/${pageName}.css?${__version__}" />
+</head>
+<body>
+<div class="topbar" id="topbar">
+    <div class="topbar-con">
+        <ul class="social-accont">
+            <li>
+                <a href="javascript:;" class="social-weixin">
+                    <span class="icon icon-weixin"></span>
+                    <div class="two-dimension-code">
+                        <span class="code-img"></span>
+                        公众号：58金融
+                    </div>
+                </a>
+            </li>
+            <li><a href="http://weibo.com/58jinrong" target="_blank" class="social-weibo"><span class="icon icon-weibo"></span></a></li>
+            <li class="ml-20">
+                <span class="cur-city">北京</span>
+                <a href="http://bj.58.com/jinrongpt/">[切换城市]</a>
+            </li>
+        </ul>
+        <div class="login-info">
+            #if ($loginUserAttribute.isUserLogin)
+            <span>$!{loginUserAttribute.username}</span>
+            <a href="https://passport.58.com/logout?path=http%3A%2F%2Fjinrong.58.com&back=now" class="logout">退出</a>
+            #else
+            <a href="https://passport.58.com/login/?path=" class="login">登陆
+            </a>|<a href="https://passport.58.com/reg/" target="_blank" class="btn-register">注册</a>
+            #end
+        </div>
+    </div>
+</div>

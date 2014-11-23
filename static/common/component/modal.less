@@ -1,0 +1,80 @@
+@import '../less-config.less';
+
+.modal-mask {
+    .opacity(50);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 998;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    width: 480px;
+    margin-left: -240px;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    
+    .modal-body {
+        padding: 0 25px;
+        overflow: auto;
+    }
+
+    .modal-title {
+        height: 50px;
+        padding-left: 45px;
+        line-height: 50px;
+        border-bottom: 1px solid #ececec;
+        font-size: 18px;
+        color: #aaa;
+        text-align: center;
+        
+        .icon-close {
+            float: right;
+            width: 24px;
+            height: 24px;
+            margin: 13px 21px 0 0;
+            background: url(../img/icon-close.png?__sprite) no-repeat;
+            cursor: pointer;
+        }
+    }
+
+    .modal-btns {
+        padding-bottom: 30px;
+        text-align: center;
+
+        .btn {
+            margin: 0 8px;
+        }
+    }
+
+    .modal-tips {
+        margin: 70px 0 60px;
+        text-align: center;
+
+        .icon {
+            margin-right: 15px;
+        }
+    }
+
+    .form-group {
+        border: none;
+
+        .form-label {
+            width: 27%;
+        }
+
+        .form-content {
+            margin-left: 27%;
+            padding-left: 15px;
+        }
+    }
+}
+

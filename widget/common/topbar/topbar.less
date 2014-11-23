@@ -1,0 +1,140 @@
+@import '/static/common/less-config-1118.less';
+// module path defined
+@module: '@{widget}/topbar';
+
+.topbar {
+    height: 32px;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+
+    .topbar-con {
+        width: @content-width;
+        margin: 0 auto;
+    }
+    
+    .social-accont {
+        .float(left);
+        color: #777;
+        
+        li {
+            .float(left);
+            position: relative;
+            line-height: 32px;
+        }
+
+        a {
+            color: #777;
+        }
+    }
+    
+    .icon-weixin {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        background: url('@{common}/img/icon-weixin.png?__sprite') no-repeat;
+    }
+
+    .social-weixin {
+        display: block;
+        width: 36px;
+        height: 26px;
+        padding-top: 6px;
+        cursor: pointer;
+
+        &:hover {
+            width: 34px;
+            _height: 25px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #fff;
+            background-color: #fff;
+            text-decoration: none;
+
+            .two-dimension-code {
+                display: block;
+                _display: none;
+            }
+            .icon-weixin {
+                background: url('@{common}/img/icon-weixin-hover.png?__sprite') no-repeat;
+            }
+        }
+    }
+
+    .social-weibo {
+        display: block;
+        width: 36px;
+        height: 26px;
+        padding-top: 6px;
+        cursor: pointer;
+
+        &:hover{
+            width: 34px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            background-color: #fff;
+
+            .icon-weibo {
+                background: url('@{common}/img/icon-weibo-hover.png?__sprite') no-repeat;
+            }
+        }
+    }
+
+    .icon-weibo {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+        background: url('@{common}/img/icon-weibo.png?__sprite') no-repeat;
+
+    }
+
+    .two-dimension-code {
+        display: none;
+        position: absolute;
+        top: 33px;
+        left: 0px;
+        width: 100px;
+        height: 118px;
+        border: 1px solid #ddd;
+        border-top: none;
+        background-color: #fff;
+        z-index: 5;
+        text-align: center;
+        line-height: 14px;
+
+        .code-img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: url('@{common}/img/two-dimension-code.png?__sprite') no-repeat;
+        }
+
+        p {
+            text-decoration: none;
+        }
+    }
+
+    .login-info {
+        .float(right);
+        height: 100%;
+        height: 32px;
+        line-height: 32px;
+
+        a {
+            color: #777;
+            margin: 0 10px;
+        }
+
+        .btn-register,
+        .logout {
+            margin-right: 0;
+        }
+    }
+
+    .cur-city {
+        color: #f60;
+        font-size: 14px;
+    }
+}

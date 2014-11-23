@@ -1,0 +1,22 @@
+<div class="footer">
+    <div class="bg">
+        <div class="contact">
+            <a href="http://about.58.com/home/" target="_blank" rel="nofollow">关于我们</a>
+            <span class="footer-gap">|</span>
+            <a href="http://e.58.com/" target="_blank" rel="nofollow">推广服务</a>
+            <span class="footer-gap">|</span>
+            <a href="http://about.58.com/hr/" target="_blank" rel="nofollow">加入我们</a>
+            <span class="footer-tips">投资有风险，购买需谨慎</span>
+            <br>
+            <span>
+                京公网安备110105000809号
+                <a href="http://www.miibeian.gov.cn/" class="footer-icp" target="_blank" rel="nofollow">京ICP证060405</a>
+                乙测资字11018014
+            </span>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+#parse('widget/common/script/script.vm') 
+</body>
+</html>

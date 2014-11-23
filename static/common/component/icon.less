@@ -1,0 +1,27 @@
+@import '../less-config.less';
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-arrow-down,
+.icon-arrow-up, {
+    width:0;
+    height:0;
+    font-size:0;
+    line-height:0;
+    border:5px solid transparent;
+    _border:5px solid #fbfbfb;
+    _filter:chroma(color=#fbfbfb);
+}
+
+.icon-arrow-up {
+    border-bottom-color:#364455;
+    border-top:none;
+}
+
+.icon-arrow-down {
+    border-top-color:#364455;
+    border-bottom:none;
+}
